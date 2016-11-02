@@ -1,6 +1,4 @@
-#include<iostream>
-#include<vector>
-#include<queue>
+#include<bits/stdc++.h>
 using namespace std;
 typedef pair<long long,int> PII;
 vector<PII> adj[10005];
@@ -8,7 +6,7 @@ bool marked[10005];
 long long prim(int x)
 {
     long long ans=0;
-    priority_queue<PII,vector<PII>,greater<PII> > Q;
+    priority_queue<PII> Q;
     Q.push(make_pair(0,x));
     PII p;
     while(!Q.empty())
@@ -30,7 +28,6 @@ long long prim(int x)
         }
 
     }
-
     return ans;
 
 }
