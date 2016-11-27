@@ -5,7 +5,7 @@ int dist[10000];
 bool visited[10000];
 void dijkstra(int s)
 {
-    priority_queue<pair<int,int> > pq;
+    priority_queue<<pair<int,int>,vector<pair<int,int> >,greater<pair<int,int> > pq;
     for(int i=0;i<10000;i++)
     {
         dist[i]=INT_MAX;
