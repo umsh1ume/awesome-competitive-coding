@@ -6,7 +6,7 @@ bool marked[10005];
 long long prim(int x)
 {
     long long ans=0;
-    priority_queue<PII> Q;
+     priority_queue<PII,vector<PII>,greater<PII> > pq;
     Q.push(make_pair(0,x));
     PII p;
     while(!Q.empty())
